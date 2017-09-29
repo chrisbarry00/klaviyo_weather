@@ -1,0 +1,129 @@
+body {
+    background-color: #24CE7B;
+}
+
+.site-container {
+    display: flex;
+    justify-content: center;
+    align-items: self-end;
+    height: 70%;
+}
+
+.email-form, .success-container {
+    border: 1px solid #323b43;
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    padding: 10px;
+    position: relative;
+    border-radius: 5px;
+    background: white;
+    color: #323b43;
+}
+
+.success-container {
+    text-align: center;
+}
+
+.form-header, .success-header {
+    font-size: 20px;
+    font-family: Georgia, serif;
+    1px solid #323b43
+    padding-bottom: 8px;
+}
+
+.form-header {
+    margin-bottom: 40px;
+}
+
+.email-form form {
+    margin: auto;
+    width: 400px;
+}
+
+.email-form label {
+    display: block;
+}
+
+.email-form input {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid lightgrey;
+    border-radius: 4px;
+    width: 100%;
+    background: white;
+}
+
+.submit-container {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.email-form .errorlist {
+    color: #a94442;
+    background-color: #f2dede;
+    padding: 15px;
+    border: 1px solid #ebccd1;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.email-form .city-help {
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.email-form button {
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 8px 16px;
+    border-radius: 4px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.email-form button {
+    color: white;
+    background-color: #0275d8;
+    border-color: #0275d8;
+}
+
+.email-form button:hover {
+    color: white;
+    background-color: #025aa5;
+    border-color: #01549b;
+}
+
+.custom-combobox {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.custom-combobox-toggle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-left: -1px;
+    padding: 0;
+}
+
+.custom-combobox-input {
+    margin: 0;
+    padding: 5px 10px;
+}
+
+.email-form .ui-button {
+    position: absolute;
+    right: -2px;
+}
+
+.ui-menu {
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}

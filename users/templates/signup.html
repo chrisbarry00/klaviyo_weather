@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Klaviyo Weather App{% endblock %}
+
+{% block content %}
+<div class="email-form">
+    <div class="form-header">
+        Weather Powered Email
+    </div>
+    <form method="POST" id="emailForm">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class="submit-container">
+            <button class="js-subscribe" type="submit">Subscribe</button>
+        </div>
+    </form>
+    <div class="city-help">
+        <p title="Sorry, your city is not popular enough. We only care about you if you're popular! #top100">
+            Help, I can't find my city!
+        </p>
+    </div>
+</div>
+
+{% endblock %}

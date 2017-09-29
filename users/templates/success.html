@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% load static from staticfiles %}
+
+{% block title %}Success!{% endblock %}
+
+{% block content %}
+<div class="success-container">
+    <div class="success-header">
+        You have been subscribed!
+    </div>
+    <div>
+        <img src="{% static 'images/sunny.gif' %}">
+        <p>Keep an eye out for your first email.</p>
+    </div>
+</div>
+
+{% endblock %}
